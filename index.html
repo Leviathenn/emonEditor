@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://192.168.1.74:5500/editor/ -->
+<html lang="en" class="a-fullscreen"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMON</title>
+    <meta aframe-injected="" name="mobile-web-app-capable" content="yes"><meta aframe-injected="" name="theme-color" content="black"><script src="./EMON_files/aframe.min.js.download"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/loader.js"></script>
+</head>
+
+<body> 
+    <div class="upinhere">
+        <div class="side-panel">
+            <div id="file-tree">
+                <h1>Objects</h1>
+                <ul>
+                    <li>
+                        <span class="f_workspace">Workspace</span>
+                        
+                    </li>
+                    
+                </ul>
+            </div>
+            <h1>Scale</h1>
+            <div class="control">
+                <label for="slider1">Width</label>
+                <input type="range" id="slider1" min="0" max="100" value="50">
+                <span id="slider1-value">50</span>
+            </div>
+            <div class="control">
+                <label for="slider2">Height</label>
+                <input type="range" id="slider2" min="0" max="100" value="75">
+                <span id="slider2-value">75</span>
+            </div>
+            <div class="control">
+                <label for="slider3">Length</label>
+                <input type="range" id="slider3" min="0" max="100" value="75">
+                <span id="slider3-value">65</span>
+            </div>
+            <h1>Position</h1>
+        </div>
+        <a-scene class="game-scene" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="">
+            <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" class="gameobject" material="" geometry="">Box</a-box>
+            <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E" class="gameobject" material="" geometry="">Sphere</a-sphere>
+            <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" class="gameobject" material="" geometry="">Cylinder</a-cylinder>
+            <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" class="gameobject" material="" geometry="">Plane</a-plane>
+            <a-sky color="#ECECEC" material="" geometry="" scale=""></a-sky>
+          <canvas class="a-canvas a-grab-cursor" data-aframe-canvas="true" data-engine="three.js r147" width="1366" height="651" style=""></canvas><div class="a-loader-title" style="display: none;">EMON</div><a-entity camera="" position="" wasd-controls="" rotation="" look-controls="" aframe-injected=""></a-entity><div class="a-enter-vr fullscreen" aframe-injected=""><button class="a-enter-vr-button" title="Enter VR mode with a headset or fullscreen without" aframe-injected=""></button></div><div class="a-enter-ar a-hidden" aframe-injected=""><button class="a-enter-ar-button" title="Enter AR mode with a headset or handheld device." aframe-injected=""></button></div><div class="a-orientation-modal a-hidden" aframe-injected=""><button aframe-injected="">Exit VR</button></div><a-entity light="" data-aframe-default-light="" aframe-injected=""></a-entity><a-entity light="" position="" data-aframe-default-light="" aframe-injected=""></a-entity></a-scene>
+        <style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    
+    .side-panel {
+        position: fixed;
+        top: 0;
+        left: 0px; /* Start off the screen on the left */
+        width: 300px;
+        height: 100%;
+        background-color: #333;
+        color: #fff;
+        padding: 20px;
+        transition: left 0.3s;
+        z-index: 1; /* Ensure it's above the content */
+    }
+    
+    #toggleButton {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 2; /* Ensure it's above the panel */
+    }
+    
+    .open {
+        left: 0; /* Slide the panel in when the "open" class is added */
+    }
+    
+    
+        </style>
+    </div>
+    
+
+
+</body></html>
